@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Speed Game - Improve Your Reflexes Online</title>
+    <meta name="description" content="Reaction Speed Game is a free online tool to test and improve your keyboard reflexes. Practice your reaction time with a realistic keyboard simulation.">
+    <meta name="keywords" content="reaction speed game, reaction time, reflex game, typing game, keyboard practice, online game, improve reflexes, test reaction, speed test, brain training">
+    <meta name="author" content="Reaction Speed Game Team">
+    <meta property="og:title" content="Reaction Speed Game - Improve Your Reflexes Online">
+    <meta property="og:description" content="Test and improve your reaction speed with this free online keyboard game. Fun, simple, and effective for all ages.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:image" content="https://yourdomain.com/og-image.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Reaction Speed Game",
+      "url": "https://yourdomain.com/",
+      "description": "Reaction Speed Game is a free online tool to test and improve your keyboard reflexes. Practice your reaction time with a realistic keyboard simulation.",
+      "inLanguage": "en"
+    }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DLH3NBSBWY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DLH3NBSBWY');
+    </script>
+</head>
+<body>
+    <div class="topbar">
+        <div class="menu-btn" tabindex="0" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="speed-btn" id="speed-btn" tabindex="0" aria-label="Adjust speed">
+            <span class="speed-text" id="speed-btn-text">Speed Setting</span>
+        </div>
+        <div class="speed-popup" id="speed-popup">
+            <label for="speed-range" id="speed-label">Interval: <span id="speed-value">2.0</span>s</label>
+            <input type="range" id="speed-range" min="0.5" max="5" step="0.1" value="2">
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="main-title">Typing Speed Game</h1>
+        <h2 class="sr-only" id="main-desc">Test and improve your typing speed and keyboard reaction time online</h2>
+        <div class="control-tip" id="tip-pause">
+            <span id="tip-start">Press <span class="kbd">Space</span> to start</span>
+            <span class="tip-divider">&nbsp;|&nbsp;</span>
+            <span>Press <span class="kbd">Space</span> to pause during the game</span>
+        </div>
+        <div id="countdown" class="countdown"></div>
+        <div id="prompt-box" class="prompt-box" aria-label="Current and missed letters"></div>
+        <div id="keyboard" class="keyboard" aria-label="Virtual keyboard simulation"></div>
+        <div id="fail-info" class="fail-info" aria-live="polite"></div>
+        <div class="score-bar">
+            <span id="score-label">Score: </span><span id="score">0</span>
+            <span class="score-divider">|</span>
+            <span id="highscore-label">High Score: </span><span id="highscore">0</span>
+        </div>
+        <section class="game-section" id="section-intro">
+            <h2>Introduction to Typing Speed Game</h2>
+            <p>Typing Speed Game is an online tool designed to improve your typing speed and keyboard reaction time. Each round, a random letter is highlighted. Press the correct key within the time limit to score. Your score and high score are always visible below the control buttons, motivating you to challenge yourself and break records.</p>
+        </section>
+        <section class="game-section" id="section-about">
+            <h2>Overview of Typing Speed Game</h2>
+            <ul>
+                <li>Completely free, no registration required, play anytime.</li>
+                <li>Each round highlights a random letter. Press the correct key to score. If you miss or make a mistake, it counts as a miss. 10 misses ends the game.</li>
+                <li><b>Score & High Score:</b> Each correct key adds 1 point. Your score and high score are always visible below the control buttons.</li>
+                <li>Supports both physical keyboard and on-screen clicks, works on all devices.</li>
+                <li>Simple, intuitive interface, easy to use.</li>
+                <li>Pause, reset, and speed adjustment supported for flexible practice.</li>
+            </ul>
+        </section>
+        <section class="game-section" id="section-howto">
+            <h2>How to Play Typing Speed Game</h2>
+            <ul>
+                <li>Click <b>Start</b> or press Space. The game starts after a countdown.</li>
+                <li>Each round, a random letter is highlighted on the virtual keyboard and shown above.</li>
+                <li>Quickly press the corresponding key on your keyboard, or click the highlighted key on screen.</li>
+                <li>Each correct answer adds 1 point. Your score is shown below the buttons.</li>
+                <li>If you miss, the letter is added to the missed list. 10 misses ends the game.</li>
+                <li>If your score beats the high score, it will be updated automatically at the end of the game.</li>
+            </ul>
+        </section>
+        <section class="game-section" id="section-benefits">
+            <h2>Benefits of Typing Speed Game</h2>
+            <ul>
+                <li><b>Improve typing speed and reaction time:</b> Regular practice helps your brain process information faster and react quicker in daily life.</li>
+                <li><b>Boost typing skills:</b> Real keyboard layout helps all ages improve typing accuracy and speed.</li>
+                <li><b>Enhance focus:</b> The game requires quick thinking and attention, helping you build focus and self-control.</li>
+                <li><b>Fun and stress relief:</b> Simple, enjoyable challenges help you relax and unwind.</li>
+                <li><b>For everyone:</b> Students, office workers, gamers, seniors, and children (great for learning to type) can all benefit.</li>
+            </ul>
+        </section>
+        <section class="game-section" id="section-suitable">
+            <h2>Who Can Play Typing Speed Game</h2>
+            <p>This game is for anyone who wants to improve typing speed and keyboard reaction time, especially:</p>
+            <ul>
+                <li>Gamers seeking a competitive edge</li>
+                <li>Students wanting to boost brain agility</li>
+                <li>Office workers aiming to type faster and more accurately</li>
+                <li>Seniors interested in cognitive health</li>
+                <li>Anyone who enjoys fun challenges</li>
+                <li>Children: a safe, fun way to practice typing and learn proper finger placement</li>
+            </ul>
+        </section>
+        <section class="game-section" id="section-tips">
+            <h2>Tips for Typing Speed Game</h2>
+            <ul>
+                <li>Practice daily to build muscle memory and faster reactions.</li>
+                <li>Start slow, then gradually increase speed to challenge yourself.</li>
+                <li>Stay focused, minimize distractions, and watch the prompt and keyboard closely.</li>
+                <li>Use both hands and proper finger placement for best typing results.</li>
+                <li>Compete with friends or family to see who can get the highest score!</li>
+            </ul>
+        </section>
+        <section class="game-section" id="section-faq">
+            <h2>Frequently Asked Questions about Typing Speed Game</h2>
+            <ul class="faq-list">
+                <li><b>Is Typing Speed Game free?</b><br>Yes, it's completely free and requires no registration.</li>
+                <li><b>Can I play on my phone or tablet?</b><br>Yes, the game works on all major browsers and devices.</li>
+                <li><b>How do I check my score?</b><br>Your score and high score are always visible below the control buttons for easy tracking and motivation.</li>
+                <li><b>Is it suitable for children?</b><br>Absolutely! The game is safe, educational, and fun for all ages, including kids learning to type.</li>
+            </ul>
+        </section>
+    </div>
+    <div class="sidebar-mask" id="sidebar-mask"></div>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">Menu</div>
+        <ul class="sidebar-list">
+            <li><a href="#section-intro">Game Introduction</a></li>
+            <li><a href="#section-about">Game Overview</a></li>
+            <li><a href="#section-howto">How to Play</a></li>
+            <li><a href="#score-label">Score & High Score</a></li>
+            <li><a href="#section-benefits">Benefits</a></li>
+            <li><a href="#section-suitable">Who Can Play</a></li>
+            <li><a href="#section-tips">Tips</a></li>
+            <li><a href="#section-faq">FAQ</a></li>
+            <li><a href="#" id="sidebar-backtop">Back to Top</a></li>
+        </ul>
+    </nav>
+    <button id="back-to-top" title="Back to Top" aria-label="Back to Top">↑</button>
+    <script src="main.js"></script>
+</body>
+</html> 
